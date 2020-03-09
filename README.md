@@ -4,7 +4,7 @@ This document describes how to install the pytorch 1.4 on the Windows platform f
 ## Prerequisites
 If you are installing from source, prepare the following environments:
  * C++14 compiler. We highly recommend installing an Anaconda environment. For more information, see https://www.anaconda.com/distribution/#download-section.
- * Visual Studio and VC++ 2017.
+ * Visual Studio and Visual C++.
  * The NVIDIA® Tools Extension SDK(NVTX), as a part of CUDA distributive. For more information, see https://docs.nvidia.com/gameworks/content/gameworkslibrary/nvtx/nvidia_tools_extension_library_nvtx.htm
  * PyTorch for Jetson platform, which is optional. For more instructions, see https://devtalk.nvidia.com/default/topic/1049071/jetson-nano/pytorch-for-jetson-nano/.
  
