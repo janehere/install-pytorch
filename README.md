@@ -4,8 +4,8 @@ This document describes how to install the pytorch 1.4 on the Windows platform f
 ## Prerequisites
 If you are installing from source, prepare the following environments:
  * C++14 compiler. We highly recommend installing an Anaconda environment. For more information, see https://www.anaconda.com/distribution/#download-section.
- * Visual Studio (version 15.3.3 with the toolset 14.11), VC++ 2017 version 15.4 v14.11 toolset
- * The NVIDIA® Tools Extension SDK(NVTX), as a part of CUDA distributive.
+ * Visual Studio and VC++ 2017.
+ * The NVIDIA® Tools Extension SDK(NVTX), as a part of CUDA distributive. For more information, see https://docs.nvidia.com/gameworks/content/gameworkslibrary/nvtx/nvidia_tools_extension_library_nvtx.htm
  * PyTorch for Jetson platform, which is optional. For more instructions, see https://devtalk.nvidia.com/default/topic/1049071/jetson-nano/pytorch-for-jetson-nano/.
  
 ## Installation
@@ -20,9 +20,7 @@ If the version of CMake is 3.14.2 or below and the VS 2019 is installed, even if
 ### Get the Pytorch Source
  1 Download the Pytorch package.  
  `git clone --recursive https://github.com/pytorch/pytorch`  
- 2 Open the package file.  
- `cd pytorch`  
- 3 Optionally, update the existing checkout files.  
+ 2 Optionally, update the existing checkout files.  
  `git submodule sync`  
  `git submodule update --init --recursive`
  
@@ -33,7 +31,7 @@ If the version of CMake is 3.14.2 or below and the VS 2019 is installed, even if
   If the version of Visual Studio 2017 is lesser than 15.3.3, please update Visual Studio 2017 to the latest version and install VC++ 2017 version 15.4 v14.11 toolset.  
   
   3 Install NVTX onto already installed CUDA by running CUDA installation once again and checking the corresponding checkbox.  
-  CUDA and MSVC have strong version dependencies. For more information, see the [CUDA and MSVC Dependency](#cuda-and-msvc-dependency).
+  CUDA and MSVC have strong version dependencies. For more information, see the [CUDA and MSVC Dependency](#cuda-and-msvc-dependency) for a reference.
   
   4 Open the command console.  
   `cmd`  
@@ -60,7 +58,7 @@ If the version of CMake is 3.14.2 or below and the VS 2019 is installed, even if
   set CUDAHOSTCXX=C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.11.25503\bin\HostX64\x64\cl.exe
   ```
 
-**Results**
+**Results**  
 `python setup.py install`
 
 ## CUDA and MSVC Dependency
