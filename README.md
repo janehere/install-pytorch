@@ -27,7 +27,7 @@ If the version of CMake is 3.14.2 or below and the VS 2019 is installed, even if
  `git submodule update --init --recursive`
  
  ### Install the Pytorch
-  1 Install Visual Studio 2017 Update 3. We recommend the version 15.3.3 with the toolset 14.11.  
+  1 Install Visual Studio. We recommend the version 15.3.3 with the toolset 14.11.  
   
   2 Run the installation once again and check the corresponding checkbox under **Individual components**/**Compilers, build tools, and runtimes** to install Visual C++. We recommend the version 15.4 with the toolset 14.11.  
   If the version of Visual Studio 2017 is lesser than 15.3.3, please update Visual Studio 2017 to the latest version and install VC++ 2017 version 15.4 v14.11 toolset.  
@@ -43,7 +43,7 @@ If the version of CMake is 3.14.2 or below and the VS 2019 is installed, even if
   `set FORCE_PY27_BUILD=1`  
   
   6 Optionally, change Cmake generator to VS 2019 if you want to build with VS 2019 generator.  
-  `set CMAKE_GENERATOR=Visual Studio 16 2019`   
+  `set CMAKE_GENERATOR=**Visual Studio 16 2019**`   
   
   7 Optionally, disable Ninja if it is detected.  
   `set USE_NINJA=OFF`  
